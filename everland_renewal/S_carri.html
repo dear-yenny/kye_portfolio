@@ -1,0 +1,1066 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S-caribbembay_guide_map</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/S_carri.css" />
+    <link rel="stylesheet" href="css/top.css">
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/scrollTo.min.js"></script>
+    <script src="js/S_carri.js"></script>
+    <script src="js/top.js"></script>
+
+  </head>
+
+  <body>
+
+    <header class="S-top cf">
+        <div class="S-content">
+          <a href="caribbeanbay.html">
+            <h2>Caribbeanbay</h2>
+            <h2>Caribbeanbay</h2>
+          </a>
+        </div>
+  
+      <div class="S-xi">
+        <? include "t_login_carri.php"; ?>
+      </div>
+  </header>
+
+
+
+
+  <!-- YE Top button -->
+  <button id="Y_top">
+    <a href="#">
+      <img src="./Y_img/top.png" width="10" alt="top"/>
+      <p>TOP</p>
+    </a>
+  </button>
+  
+
+
+  <!-- ZW_Bottom Fix Menubar -->
+  <div class="z-menubar">
+    <a href="https://www.everland.com/web/everland/how/charge/how_use_method.html" class="line">
+      <span>요금 & 패키지</span>
+    </a>
+    <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrList&siteCode=CT00101&themeCode=CT00401"
+      class="line">
+      <span>어트랙션</span>
+    </a>
+    <a href="#" class="line">
+      <span>가이드 맵</span>
+    </a>
+    <a href="https://reservation.everland.com/web/main.do?method=index" class="line">
+      <span>스마트 예약</span>
+    </a>
+  </div>
+
+
+
+  <!-- guide map -->
+  <section class="S-container">
+    <div class="S-container-inner">
+      <div id="S-button" class="S-btn">
+        <ul class="tab">
+
+        <li class="S-atrbtn">
+          <a href="#button11, #button12, #button13, #button14, #button15, #button16" class=" S-selected S-act0 ">
+            <p>전체보기</p>
+          </a>
+        </li>
+        
+        <li class="S-atrbtn">
+          <a href="#button11" class=" S-selected S-act1">
+            <p>어트랙션</p>
+          </a>
+        </li>
+
+        <li class="S-atrbtn">
+          <a href="#button12" class="S-act2">
+            <p>빌리지</p>
+          </a>
+        </li>
+
+        <li class="S-atrbtn">
+          <a href="#button13" class="S-act3">
+            <p>공연 및 전시</p>
+          </a>
+        </li>
+
+        <li class="S-atrbtn">
+          <a href="#button14" class="S-act4">
+            <p>편의시설</p>
+          </a>
+        </li>
+
+        <li class="S-atrbtn">
+          <a href="#button15" class="S-act5">
+            <p>레스토랑</p>
+          </a>
+        </li>
+
+        <li class="S-atrbtn">
+          <a href="#button16" class="S-act6">
+            <p>선물샵</p>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    </div>
+  </section>
+
+
+      <!-- 어트렉션 시작 -->
+
+      <section>
+        <div id="S-panel">
+          <ul id="S-attrctn" class="S-attr cf">
+            <li id="button11">
+              <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=2497&zoneCode=CT00303&siteCode=CT00102&themeCode=CT00501">
+                <img class="S-atrimg" src="./carri_img/attraction/Thriller_3_star/mage_storm_3-1.png" alt="메가스톰" />
+                <span class="S-titbox">
+                  <span class="S-atrNmL">베이 슬라이드</span>
+                  <span class="S-atrNmL">메가스톰</span>
+                </span>
+                <span class="S-titbox cf">
+                  <span class="S-atrNmR cf">운영중</span>
+                  <span class="S-atrNmR cf">09:00 ~ 18:00</span>
+                </span>
+              </a>
+            
+              <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=195&zoneCode=CT00302&siteCode=CT00102&themeCode=CT00501">
+                <img class="S-atrimg" src="./carri_img/attraction/Thriller_3_star/outside_wave_pool_3-2.png" alt="실외 파도풀" />
+                <span class="S-titbox">
+                  <span class="S-atrNmL">씨웨이브</span>
+                  <span class="S-atrNmL">실외 파도풀</span>
+                </span>
+                <span class="S-titbox cf">
+                  <span class="S-atrNmR cf">운영중</span>
+                  <span class="S-atrNmR cf">09:00 ~ 18:00</span>
+                </span>
+              </a>
+
+              <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=205&zoneCode=CT00305&siteCode=CT00102&themeCode=CT00501">
+                <img class="S-atrimg" src="./carri_img/attraction/Thriller_3_star/tower_raft_3-3.png" alt="타워 래프트" />
+                <span class="S-titbox">
+                  <span class="S-atrNmL">와일드리버</span>
+                  <span class="S-atrNmL">타워 래프트</span>
+                </span>
+                <span class="S-titbox cf">
+                  <span class="S-atrNmR cf">운영중</span>
+                  <span class="S-atrNmR cf">10:00 ~ 18:00</span>
+                </span>
+              </a>
+
+              <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=204&zoneCode=CT00305&siteCode=CT00102&themeCode=CT00501">
+                <img class="S-atrimg" src="./carri_img/attraction/Thriller_3_star/tower_Boomerango_3-4.png" alt="타워 부메랑고" />
+                <span class="S-titbox">
+                  <span class="S-atrNmL">와일드리버</span>
+                  <span class="S-atrNmL">타워 부메랑고</span>
+                </span>
+                <span class="S-titbox cf">
+                  <span class="S-atrNmR cf">운영중</span>
+                  <span class="S-atrNmR cf">10:00 ~ 18:00</span>
+                </span>
+              </a>
+
+              <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=1440&zoneCode=CT00305&siteCode=CT00102&themeCode=CT00501">
+                <img class="S-atrimg" src="./carri_img/attraction/Thriller_3_star/Aqua_loop_3-5.png" alt="아쿠아 루프" />
+                <span class="S-titbox">
+                  <span class="S-atrNmL">와일드리버</span>
+                  <span class="S-atrNmL">아쿠아 루프</span>
+                </span>
+                <span class="S-titbox cf">
+                  <span class="S-atrNmR cf">운영중</span>
+                  <span class="S-atrNmR cf">11:00 ~ 18:00</span>
+                </span>
+              </a>
+
+              <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=198&zoneCode=CT00303&siteCode=CT00102&themeCode=CT00501">
+                <img class="S-atrimg" src="./carri_img/attraction/Thriller_3_star/Water_bobsleigh_3-6.png" alt="워터 봅슬레이" />
+                <span class="S-titbox">
+                  <span class="S-atrNmL">베이 슬라이드</span>
+                  <span class="S-atrNmL">워터 봅슬레이</span>
+                </span>
+                <span class="S-titbox cf">
+                  <!-- <span class="S-atrNmR cf">운영종료</span> -->
+                  <span class="S-atrNmR end cf">운영종료</span>
+                  <span class="S-atrNmR cf"> - </span>
+                </span>
+              </a>
+
+              <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=201&zoneCode=CT00304&siteCode=CT00102&themeCode=CT00501">
+                <img class="S-atrimg" src="./carri_img/attraction/Thriller_3_star/Surfing_Ride_3-7.png" alt="서핑 라이드" />
+                <span class="S-titbox">
+                  <span class="S-atrNmL">포트리스</span>
+                  <span class="S-atrNmL">서핑 라이드</span>
+                </span>
+                <span class="S-titbox cf">
+                <!-- <span class="S-atrNmR cf">운영중</span> -->
+                  <span class="S-atrNmR end cf">운영종료</span>
+                  <span class="S-atrNmR cf"> - </span>
+                </span>
+              </a>
+
+              <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=199&zoneCode=CT00304&siteCode=CT00102&themeCode=CT00501">
+                <img class="S-atrimg" src="./carri_img/attraction/Thriller_2_star/Adventureful_2-1.png" alt="어드벤처풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">포트리스</span>
+              <span class="S-atrNmL">어드벤처풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 18:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=193&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_2_star/Quick_Ride_2-2.png" alt="퀵라이드 바디" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">퀵라이드 바디</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=5369&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_2_star/Quick_Ride_2-2.png" alt="퀵라이드 튜브" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">퀵라이드 튜브</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=189&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_2_star/full_side_slide_2-3.png" alt="풀사이드 슬라이드" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">풀사이드 슬라이드</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=187&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_2_star/indoor_wave_pool_2-4.png" alt="실내 파도풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">실내 파도풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=194&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_2_star/indoor_diving_pool_2-5.png" alt="실내 다이빙풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">실내 다이빙풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=206&zoneCode=CT00305&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_2_star/Wild_Blaster_2-6.png" alt="와일드 블라스터" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">와일드리버</span>
+              <span class="S-atrNmL">와일드 블라스터</span>
+            </span>
+            <span class="S-titbox cf">
+              <!-- <span class="S-atrNmR cf">운영중</span> -->
+              <span class="S-atrNmR end cf">운영종료</span>
+              <span class="S-atrNmR cf"> - </span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=197&zoneCode=CT00303&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_2_star/Tube_Ride_2-7.png" alt="튜브 라이드" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">베이 슬라이드</span>
+              <span class="S-atrNmL">튜브 라이드</span>
+            </span>
+            <span class="S-titbox cf">
+              <!-- <span class="S-atrNmR cf">운영중</span> -->
+              <span class="S-atrNmR end cf">운영종료</span>
+              <span class="S-atrNmR cf"> - </span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=1283&zoneCode=CT00302&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_2_star/diving_plant_2-8.png" alt="다이빙풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">씨웨이브</span>
+              <span class="S-atrNmL">다이빙풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 18:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=5149&zoneCode=CT00304&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/cave_Spa_1-1.png" alt="CAVE 스파" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">포트리스</span>
+              <span class="S-atrNmL">CAVE 스파</span>
+            </span>
+            <span class="S-titbox cf">
+              <!-- <span class="S-atrNmR cf">운영중</span> -->
+              <span class="S-atrNmR end cf">운영종료</span>
+              <span class="S-atrNmR cf"> - </span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=200&zoneCode=CT00304&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/outdoor_running_water_pool_1-2.png" alt="실외 유수풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">포트리스</span>
+              <span class="S-atrNmL">실외 유수풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 18:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=190&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/Badeful_1-3.png" alt="바데풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">바데풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=186&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/Sandy_Pool_1-4.png" alt="샌디풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">샌디풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=185&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/indoor_running_water_pool_1-5.png" alt="실내 유수풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">실내 유수풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=191&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/Indoor_Adventure_Pool_1-6.png" alt="실내 어드벤처풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">실내 어드벤처풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=192&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/Indoor_Kidney_Pool_1-7.png" alt="실내 키디풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">실내 키디풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=188&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/children's_pool_1-8.png" alt="유아풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">유아풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=34&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/Spa_1-9.png" alt="스파" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">스파</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=35&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/Sauna_1-10.png" alt="사우나" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">사우나</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=208&zoneCode=CT00305&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/Wild_River_Pool_1-11.png" alt="와일드 리버 풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">와일드리버</span>
+              <span class="S-atrNmL">와일드 리버 풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">10:00 ~ 18:00</span>
+            </span>
+            </a>
+
+            <a href="http://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=209&zoneCode=CT00305&siteCode=CT00102&themeCode=CT00501">
+              <img class="S-atrimg" src="./carri_img/attraction/Thriller_1_star/kidney_pool_1-12.png" alt="키디풀" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">와일드리버</span>
+              <span class="S-atrNmL">키디풀</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 18:00</span>
+            </span>
+            </a>
+
+
+          </li>
+
+          
+            <!-- 어트렉션 종료 -->
+
+
+
+
+            <!-- 빌리지 시작 -->
+
+          <li id="button12">
+
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Spa_Village_1-1.png" alt="스파 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">스파 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Aquatic_cabana_1-2.png" alt="아쿠아틱 카바나" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">아쿠아틱 카바나</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Wave_Village_1-3.png" alt="웨이브 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">씨웨이브</span>
+              <span class="S-atrNmL">웨이브 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Castle_Village_1-4.png" alt="캐슬 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">포트리스</span>
+              <span class="S-atrNmL">캐슬 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Riverway_Daybed_1-5.png" alt="리버웨이 데이베드" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">포트리스</span>
+              <span class="S-atrNmL">리버웨이 데이베드</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Cabana_1-6.png" alt="카바나 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">포트리스</span>
+              <span class="S-atrNmL">카바나 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Postpartum_Ang_Village_1-7.png" alt="산후앙 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">와일드리버</span>
+              <span class="S-atrNmL">산후앙 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Slide_Village_1-8.png" alt="슬라이드 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">베이 슬라이드</span>
+              <span class="S-atrNmL">슬라이드 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Kidney_Village_1-9.png" alt="키디 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">와일드리버</span>
+              <span class="S-atrNmL">키디 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Adventure_Village_1-10.png" alt="어드벤처 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">포트리스</span>
+              <span class="S-atrNmL">어드벤처 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Surfing_Village_1-11.png" alt="서핑 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">포트리스</span>
+              <span class="S-atrNmL">서핑 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Raft_Village_1-12.png" alt="래프트 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">와일드리버</span>
+              <span class="S-atrNmL">래프트 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Tower_Village_1-13.png" alt="타워 빌리지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">와일드리버</span>
+              <span class="S-atrNmL">타워 빌리지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Aquatic_Daybad_1-14.png" alt="아쿠아틱 데이베드" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">아쿠아틱 데이베드</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Wild_DayBad_1-15.png" alt="와일드 데이베드" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">와일드리버</span>
+              <span class="S-atrNmL">와일드 데이베드</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://reservation.everland.com/web/cb.do?method=getProduct">
+              <img class="S-atrimg" src="./carri_img/Village/Relaxation_Daybad_1-16.png" alt="릴렉스 데이베드" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">릴렉스 데이베드</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">예약 후 이용가능</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+      
+
+          </li>
+
+          <!-- 빌리지 종료 -->
+
+
+
+
+          <!-- 공연 및 전시 시작 -->
+
+          <li id="button13">
+
+
+            <a href="https://www.everland.com/web/caribbean/how/guide/how_guide_map.html">
+              <img class="S-atrimg" src="./carri_img/amenity/LOADING.png" alt="카리브 스테이지" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">씨웨이브</span>
+              <span class="S-atrNmL">카리브 스테이지</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">12:00 ~ 18:00</span>
+            </span>
+            </a>
+
+         
+
+          </li>
+
+          <!-- 공연 및 전시 종료 -->
+
+
+
+
+          <!-- 편의시설 시작 -->
+
+          <li id="button14">
+
+
+            <a href="https://www.everland.com/web/caribbean/how/guide/how_guide_map.html">
+              <img class="S-atrimg" src="./carri_img/amenity/LOADING.png" alt="자켓 대여소" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">대여소</span>
+              <span class="S-atrNmL">자켓 대여소</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/guide/how_guide_map.html">
+              <img class="S-atrimg" src="./carri_img/amenity/LOADING.png" alt="실외 대여소" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">대여소</span>
+              <span class="S-atrNmL">실외 대여소</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/guide/how_guide_map.html">
+              <img class="S-atrimg" src="./carri_img/amenity/LOADING.png" alt="4층 샌디 대여소" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">대여소</span>
+              <span class="S-atrNmL">4층 샌디 대여소</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/guide/how_guide_map.html">
+              <img class="S-atrimg" src="./carri_img/amenity/LOADING.png" alt="웨이브 락커" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">락커</span>
+              <span class="S-atrNmL">웨이브 락커</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/guide/how_guide_map.html">
+              <img class="S-atrimg" src="./carri_img/amenity/LOADING.png" alt="4층 실내 락커" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">락커</span>
+              <span class="S-atrNmL">4층 실내 락커</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/guide/how_guide_map.html">
+              <img class="S-atrimg" src="./carri_img/amenity/LOADING.png" alt="5층 실내 락커" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">락커</span>
+              <span class="S-atrNmL">5층 실내 락커</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/guide/how_guide_map.html">
+              <img class="S-atrimg" src="./carri_img/amenity/LOADING.png" alt="안내데스크" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">인포/서비스센터</span>
+              <span class="S-atrNmL">안내데스크</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/amenity/how_amenity.html">
+              <img class="S-atrimg" src="./carri_img/amenity/img_method_14.png" alt="물품 보관소" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">편의시설</span>
+              <span class="S-atrNmL">물품 보관소</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">정문 입장 전 왼쪽</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/amenity/how_amenity.html">
+              <img class="S-atrimg" src="./carri_img/amenity/img_amenity_02.png" alt="베이비 서비스" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">편의시설</span>
+              <span class="S-atrNmL">베이비 서비스</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">아쿠아틱 센터 4층</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/amenity/how_amenity.html">
+              <img class="S-atrimg" src="./carri_img/amenity/img_amenity_04.png" alt="귀중품 보관함" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">편의시설</span>
+              <span class="S-atrNmL">귀중품 보관함(유료)</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">아쿠아틱 센터 3층</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/amenity/how_amenity.html">
+              <img class="S-atrimg" src="./carri_img/amenity/LOADING.png" alt="의무실" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">편의시설</span>
+              <span class="S-atrNmL">의무실</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">아쿠아틱 센터 3층</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/amenity/how_amenity.html">
+              <img class="S-atrimg" src="./carri_img/amenity/img_amenity_06.png" alt="ATM" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">편의시설</span>
+              <span class="S-atrNmL">ATM(출금만 가능)</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">등대 매표소 안</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/web/caribbean/how/amenity/how_amenity.html">
+              <img class="S-atrimg" src="./carri_img/amenity/cb_smokinG.png" alt="흡연실" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">편의시설</span>
+              <span class="S-atrNmL">흡연실</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">산후앙 뒷편</span>
+              <span class="S-atrNmR cf">자켓 대여소 뒷편</span>
+            </span>
+            </a>
+
+          </li>
+
+          <!-- 편의시설 종료 -->
+
+
+
+
+          <!-- 레스토랑 시작 -->
+
+          <li id="button15">
+
+
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=168&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00503">
+              <img class="S-atrimg" src="./carri_img/Restaurant/LA_COSTA_1.png" alt="허리케인" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">씨웨이브</span>
+              <span class="S-atrNmL">라꼬스타</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">양식</span>
+              <span class="S-atrNmR cf">운영중</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=4729&zoneCode=CT00302&siteCode=CT00102&themeCode=CT00503">
+              <img class="S-atrimg" src="./carri_img/Restaurant/Beach_Side_Bar_2.png" alt="허리케인" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">씨웨이브</span>
+              <span class="S-atrNmL">비치사이드바</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">카페, 양식</span>
+              <span class="S-atrNmR cf">운영중</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=4890&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00503">
+              <img class="S-atrimg" src="./carri_img/Restaurant/Paul_Bassett_3.png" alt="허리케인" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">씨웨이브</span>
+              <span class="S-atrNmL">폴바셋</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">음료 &amp; 디저트</span>
+              <span class="S-atrNmR cf">운영중</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=221&zoneCode=CT00304&siteCode=CT00102&themeCode=CT00503">
+              <img class="S-atrimg" src="./carri_img/Restaurant/Harbour_Master_4.png" alt="허리케인" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">포트리스</span>
+              <span class="S-atrNmL">하버마스터</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">양식</span>
+              <span class="S-atrNmR cf">운영중</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=4869&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00503">
+              <img class="S-atrimg" src="./carri_img/Restaurant/Harbour_Snack_5.png" alt="허리케인" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">씨웨이브</span>
+              <span class="S-atrNmL">하버 스낵</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">스낵</span>
+              <span class="S-atrNmR cf">운영중</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=39&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00503">
+              <img class="S-atrimg" src="./carri_img/Restaurant/Madrid_6.png" alt="허리케인" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">마드리드</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">마켓</span>
+              <span class="S-atrNmR cf">운영중</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=167&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00503">
+              <img class="S-atrimg" src="./carri_img/Restaurant/Burger_Cafe_Gallion_7.png" alt="허리케인" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">버거카페 갤리언</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">패스트푸드</span>
+              <span class="S-atrNmR cf">운영중</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=5289&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00503">
+              <img class="S-atrimg" src="./carri_img/Restaurant/rockcar_cart_8.png" alt="허리케인" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">씨웨이브</span>
+              <span class="S-atrNmL">락카 카트</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">스낵</span>
+              <span class="S-atrNmR cf">운영중</span>
+            </span>
+            </a>
+
+
+          </li>
+
+          <!-- 레스토랑 종료 -->
+
+
+
+
+          <!-- 선물샵 시작 -->
+
+          <li id="button16">
+
+            
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=42&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00504">
+              <img class="S-atrimg" src="./carri_img/Gift_shop/Navio.png" alt="허리케인" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">나비오</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=40&zoneCode=CT00301&siteCode=CT00102&themeCode=CT00504">
+              <img class="S-atrimg" src="./carri_img/Gift_shop/Macado.png" alt="허리케인" />
+            <span class="S-titbox">
+              <span class="S-atrNmL">아쿠아틱센터</span>
+              <span class="S-atrNmL">마카도</span>
+            </span>
+            <span class="S-titbox cf">
+              <span class="S-atrNmR cf">운영중</span>
+              <span class="S-atrNmR cf">09:00 ~ 19:00</span>
+            </span>
+            </a>
+
+          </li>
+
+          <!-- 선물샵 종료 -->
+
+
+        </ul>
+    </div>
+  </section>
+
+
+    <footer class="S-footer">
+
+      <!-- <a href="everland2.html"><img src="./carri_img/ever_logo.PNG" alt="logo"></a> -->
+        <div class="S-content1">
+          <a href="caribbeanbay.html">
+            <h2>Caribbeanbay</h2>
+            <h2>Caribbeanbay</h2>
+          </a>
+        </div>
+      
+      <div class="S-sns">
+          <a href="https://www.youtube.com/user/withEverland"><img src="./carri_img/cb_icon/youtube.png" alt="유튜브"></a>
+          <a href="https://www.instagram.com/witheverland/"><img src="./carri_img/cb_icon/instagram.png" alt="인스타"></a>
+          <a href="https://www.facebook.com/witheverland"><img src="./carri_img/cb_icon/facebook.png" alt="페이스북"></a>
+          <a href="https://blog.naver.com/witheverland"><img src="./carri_img/cb_icon/bold.png" alt="네이버 블로그"></a>
+          <a href="https://www.witheverland.com/"><img src="./carri_img/cb_icon/with.png" alt="위드 블로그"></a>
+          <a href="https://twitter.com/witheverland"><img src="./carri_img/cb_icon/twitter.png" alt="트위터"></a>
+      </div>
+  
+          <p>
+              <a class="S-text5" href="https://www.everland.com/web/everland/resort/intro/resort_intro.html">에버랜드 리조트 소개</a> | 
+              <a class="S-text5" href="https://www.everland.com/web/everland/provision/h_provision/provision_new.html">이용약관</a> | 
+              <a class="S-text5" href="https://pvoc.everland.com/">CAST 참여</a> | 
+              <a class="S-text5" href="https://www.everland.com/web/everland/sitemap/sitemap.html">사이트맵</a>
+          </p>
+  
+          <p>경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)</p>
+          <p>대표이사 : 정해린 | 사업자등록번호 : 135-85-04288</p>
+          <p>통신판매업 신고번호 : 제2006-용인처인-0216호</p>
+          <p><a class="S-text5" href="https://www.everland.com/web/everland/customercenter/faq/faq.html"><strong>손님상담센터</strong></a> : 031-320-5000(유료)</p>
+          <p><a class="S-text5" href="https://www.everland.com/web/everland/personalinfo/index.html"><strong>개인정보처리방침</strong></a> |
+          <a class="S-text5" href="https://www.everland.com/web/everland/policyrevision/list.html"><strong>방침 개정 안내</strong></a> |
+          <a class="S-text5" href="https://www.everland.com/web/everland/bidnotice/list.html"><strong>입찰공고</strong></a></p>
+          <p class="S-text4">Copyright © Samsung C&T Corporation. All rights reserved.</p>
+          </p>
+  </footer>
+  </body>
+</html>

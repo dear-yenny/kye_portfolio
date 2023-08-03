@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>caribbeanbay</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/J_slick-theme.css"> -->
+  <link rel="stylesheet" href="css/z-everland.css">
+  <link rel="stylesheet" href="css/caribbeanbay.css">
+  <link rel="stylesheet" href="css/top.css">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="./js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/scrollTo.min.js"></script>
+  <script src="js/caribbeanbay.js"></script>
+  <script src="js/J_main.js"></script>
+  <script src="js/top.js"></script>
+
+<body>
+
+      <!-- 메인 상단 로고&아이콘 부분 -->
+<header class="k-top cf">
+  <nav class="k-logo1">
+    <a href="caribbeanbay.html">
+        <h2>Caribbeanbay</h2>
+        <h2>Caribbeanbay</h2>
+    </a>
+  </nav>
+
+  <nav class="k-tmenu">
+      <ul class="k-navi">
+        <? include "t_login_carri.php"; ?>
+          <!-- <li><a href="login_form.php"><img src="H_img/cb_icon2.png" alt="icon"></a></li>
+
+          <li><a href="#"><img src="H_img/cb_icon1.png" alt="icon"></a>
+              <ul class="k-sub1">
+                  <li><a href="#"><img src="H_img/kor.png" alt="icon"></a></li>
+                  <li><a href="#"><img src="H_img/eng.png" alt="icon"></a></li>
+                  <li><a href="#"><img src="H_img/chi.png" alt="icon"></a></li>
+              </ul>
+          </li> -->
+      </ul>
+  </nav>
+</header>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide cf">
+        <a href="#"><img src="H_img/cb_img1.jpg" /></a>
+      </div>
+      <div class="swiper-slide cf">
+        <a href="#"><img src="H_img/cb_img2.jpg" /></a>
+      </div>
+      <!-- <div class="swiper-slide cf">
+        <img src="img/e_img3.jpg" />
+      </div>
+      <div class="swiper-slide cf">
+        <img src="img/e_img4.jpg" />
+      </div> -->
+    </div>
+    <div class="swiper-scrollbar"></div>
+  </div>  
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Script -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
+
+  <!-- 오늘의 운영시간 부분 -->
+<section>
+  <div class="k-today_box1">      
+      <div class="k-today_box2"> 
+          <h1>TODAY</h1>         
+          <h2>오늘의 운영시간</h2>
+      </div>
+      <div class="k-today_box3"> 
+          <ul class="k-today_box4"> 
+              <h3>06월 02일 (금)</h3>
+              <ul class="k-t_box1">
+                  <li class="k-today1">실내<br>
+                      <span class="k-t1">10:00 - 18:00</span>
+                  </li>
+                  <li class="k-today2">실외<br>
+                      <span class="k-t2">10:00 - 18:00</span>
+                  </li>
+              </ul>
+              <ul class="k-t_box2">
+                  <li class="k-today3">
+                      <img src="H_img/cb_icon3.png" alt="구름 아이콘">맑음
+                  </li>
+                  <li class="k-today4">|</li>
+                  <li class="k-today5">최고:27º 최저:18º</li>
+              </ul>
+              <li class="k-today6">
+                  <h3>오늘의 운휴 안내</h3>
+                  CAVE 스파, 서핑 라이드, 아쿠아루프<br>
+                  어드벤처풀, 와이드 리버 풀, 와일드 블라스터<br>
+                  워터 봅슬레이, 키디풀, 타워 래프트<br>
+                  타워 부메랑고, 튜브 라이드
+              </li>
+              <button class="k-click">
+                  <a href="https://www.everland.com/web/caribbean/how/method/how_use_method.html">
+                      캐비 이용방법 Click
+                  </a>
+              </button>
+          </ul>
+      </div>
+  </div>
+</section>
+
+<!-- new&event 부분 -->
+<div id="swi_box">
+<h1>New & Event</h1>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide cf">
+        <a href="#"><img src="H_img/cb_img3.jpg" /></a>
+      </div>
+      <div class="swiper-slide cf">
+        <img src="H_img/cb_img4.jpg" />
+      </div>
+      <!-- <div class="swiper-slide cf">
+        <img src="img/e_img3.jpg" />
+      </div>
+      <div class="swiper-slide cf">
+        <img src="img/e_img4.jpg" />
+      </div> -->
+    </div>
+    <div class="swiper-scrollbar"></div>
+  </div>  
+</div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Script -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
+
+
+<!-- 캐비 베스트 어트랙션 부분 -->
+<section id="J_slider_best">
+
+  <article class="J_slider_be">
+    <h1>캐리비안 베이 BEST 어트랙션</h1>
+    <h3>캐리비안 베이 가장 인기있는 어트랙션 
+      <br/><span> TOP 6</span>을 소개합니다!
+    </h3>
+  </article>
+
+  <section class="J_slide-container">
+      <div class="J_slider_best">
+          <div class="J_img">
+              <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=2497&zoneCode=CT00303&siteCode=CT00102&themeCode=CT00501">
+                <img id="J_best1" src="H_img/cb_attraction1.jpg" alt="메가스톰"> 
+                <p>초대형 복합 <br/> 워터 슬라이드</p>
+                <h4>메가스톰</h4>  
+              </a>          
+          </div>
+
+          <div class="J_img">
+              <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=206&zoneCode=CT00305&siteCode=CT00102&themeCode=CT00501">
+                <img id="J_best2" src="H_img/cb_attraction2.jpg" alt="와일드 블라스터">
+                <p>상상초월 짜릿한 <br/> 롤러코스터</p>
+                <h4>와일드 블라스터</h4>
+              </a>
+          </div>
+
+          <div class="J_img">
+              <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=204&zoneCode=CT00305&siteCode=CT00102&themeCode=CT00501">
+                <img id="J_best3" src="H_img/cb_attraction3.jpg" alt="타워 부메랑고">
+                <p>해적망루에서 <br/> 단숨에 급강하!</p>
+                <h4>타워 부메랑고</h4>
+              </a>
+          </div>
+
+          <div class="J_img">
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=1440&zoneCode=CT00305&siteCode=CT00102&themeCode=CT00501">
+                <img id="J_best3" src="H_img/cb_attraction4.jpg" alt="아쿠아루프">
+                <p>이보다 더 스릴 <br/> 넘칠 순 없다!</p>
+                <h4>아쿠아루프</h4>
+              </a>
+          </div>
+
+          <div class="J_img">
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=198&zoneCode=CT00303&siteCode=CT00102&themeCode=CT00501">
+                <img id="J_best3" src="H_img/cb_attraction5.jpg" alt="워터 봅슬레이">
+                <p>짜릿한 쾌감 <br/> 급속 충전~</p>
+                <h4>워터 봅슬레이</h4>
+              </a>
+          </div>
+          
+          <div class="J_img">
+            <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrView&facilId=197&zoneCode=CT00303&siteCode=CT00102&themeCode=CT00501">
+                <img id="J_best3" src="H_img/cb_attraction6.jpg" alt="튜브 라이더">
+                <p>초스피드 스릴 여행!</p>
+                <h4>튜브 라이더</h4>
+            </a>
+          </div>
+      </div>
+  </section>
+</section>
+
+
+<!-- 수질 현황 부분 -->
+<section>
+  <div class="k-cb_box">
+          <ul class="k-cb_icon">
+              <li><img src="H_img/cb_icon4.png" alt="좌측 아이콘"></li>
+              <button class="k-radius">
+                  <a href="https://www.everland.com/mobile/caribbean/water.el?cid=WaterQuality_PC">
+                      캐리비안베이 수질 현황 확인
+                  </a>
+              </button>
+              <li><img src="H_img/cb_icon5.png" alt="좌측 아이콘"></li>
+      </ul>
+  </div>
+</section>
+
+<!-- 스페셜 체험 예약하기 부분 -->
+<div class="k-special">
+  <div class="k-special_1">
+      <h2>스페셜 체험 예약하기</h2>
+      <h4>여유있는 캐리비안 베이 이용을 위한 필수 아이템</h4>
+  <div class="k-special_box">
+      <ul class="cf">
+          <li class="k-special_list_01">
+              <a href="https://reservation.everland.com/web/cb.do?method=calendar">
+                  <img src="H_img/cb_special1.jpg" alt="빌리지"/>
+                  <div class="k-box">
+                      <h3>빌리지</h3>
+                      <p>
+                        가족, 연인과 여유로운 휴식을 누려보세요<br>#빌리지 #데이베드
+                      </p>
+                  </div>
+              </a>
+          </li>
+          <li class="k-special_list_02">
+              <a href="https://reservation.everland.com/web/cb.do?method=calendar">
+                  <img src="H_img/cb_special6.jpg" alt="실내 비치웨어"/>
+                  <div class="k-box">
+                      <h3>실내 비치웨어</h3>
+                      <p>편안한 물놀이를 위한 아쿠아틱 센터 체어<br>
+                      #실내 #비치웨어</p>
+                  </div>
+              </a>
+          </li>
+          <li class="k-special_list_02">
+              <a href="https://reservation.everland.com/web/cb.do?method=calendar">
+                  <img src="H_img/cb_special2.jpg" alt="실외 비치웨어"/>
+                  <div class="k-box">
+                      <h3>실외 비치웨어</h3>
+                      <p>편안한 물놀이를 위한 실외 체어<br>
+                      #실외 #비치웨어</p>
+                  </div>
+              </a>
+          </li>
+          <li class="k-special_list_03">
+              <a href="https://reservation.everland.com/web/cb.do?method=calendar">
+                  <img src="H_img/cb_special3.jpg" alt="캐비 플랜잇"/>
+                  <div class="k-box">
+                      <h3>캐비 플랜잇 (메가 3회)</h3>
+                      <p>메가스톰 매니아 모여라<br>
+                      #스페셜체험 #메가스톰 #3회권</p>
+                  </div>
+              </a>
+          </li>
+          <li class="k-special_list_03">
+              <a href="https://reservation.everland.com/web/cb.do?method=calendar">
+                  <img src="H_img/cb_special5.jpg" alt="캐비 플랜잇(3기종)"/>
+                  <div class="k-box">
+                      <h3>캐비 플랜잇 (3기종)</h3>
+                      <p>슬라이드 3종을 기다림없이 즐길 수 있는 기회!<br>
+                      #메가스톰 #타워(택1) #와일드블라스터</p>
+                  </div>
+              </a>
+          </li>
+          <li class="k-special_list_04">
+              <a href="https://reservation.everland.com/web/cb.do?method=calendar">
+                  <img src="H_img/cb_special4.jpg" alt="자켓"/>
+                  <div class="k-box">
+                      <h3>자켓</h3>
+                      <p>캐리비안베이 자켓으로 안전한 물놀이!</p>
+                  </div>
+              </a>
+          </li>
+      </ul>
+  </div>
+      <div class="k-button">
+          <button class="k-more_btn">더보기</button>
+      </div>
+  </div>
+</div>
+
+<!-- 동영상 부분 -->
+<div id="k-clip">
+  <h1> caribbean bay Clip</h1>
+    <a href="https://www.youtube.com/watch?v=Hed_nUvjJXw">
+      <img src="H_img/cb_gif.gif" alt="gif">
+    </a>
+</div>
+
+<!-- 서브페이지 이동 -->
+<nav id="Y_sub">
+  <div id="Y_submain">
+    <a href="caribbeanbay.html">
+      <div id="Y_carri">
+        <!-- <div class="Y_content">
+          <h2>Caribbeanbay</h2>
+          <h2>Caribbeanbay</h2>
+        </div> -->
+        <img src="./H_img/logo_carribean1.png" alt="carribeanbay">
+      </div>
+    </a>
+
+    <a href="index.html">
+      <div id="Y_ever">
+        <img src="./H_img/ever_logo2.png" alt="everland">
+      </div>
+    </a>
+
+    <a href="homebridge.html">
+      <div id="Y_home">
+        <!-- <h2>HOMEBRIDGE</h2> -->
+        <img src="./H_img/logo_home.png" alt="homebridge">
+      </div>
+    </a>
+    
+  </div>
+</nav>
+
+<!-- 푸터 부분 -->
+<footer class="k-footer1">
+  <div class="content1">
+      <a href="caribbeanbay.html">
+          <h2>Caribbeanbay</h2>
+          <h2>Caribbeanbay</h2>
+      </a>
+  </div>
+  <div class="k-sns">
+      <a href="https://www.youtube.com/user/withEverland"><img src="H_img/youtube.png" alt="유튜브"></a>
+      <a href="https://www.instagram.com/witheverland/"><img src="H_img/instagram.png" alt="인스타"></a>
+      <a href="https://www.facebook.com/witheverland"><img src="H_img/facebook.png" alt="페이스북"></a>
+      <a href="https://blog.naver.com/witheverland"><img src="H_img/bold.png" alt="네이버 블로그"></a>
+      <a href="https://www.witheverland.com/"><img src="H_img/with.png" alt="위드 블로그"></a>
+      <a href="https://twitter.com/witheverland"><img src="H_img/twitter.png" alt="트위터"></a>
+  </div>
+
+      <p>
+          <a class="k-text5" href="https://www.everland.com/web/everland/resort/intro/resort_intro.html">에버랜드 리조트 소개</a> | 
+          <a class="k-text5" href="https://www.everland.com/web/everland/provision/h_provision/provision_new.html">이용약관</a> | 
+          <a class="k-text5" href="https://pvoc.everland.com/">CAST 참여</a> | 
+          <a class="k-text5" href="https://www.everland.com/web/everland/sitemap/sitemap.html">사이트맵</a>
+      </p>
+
+      <p>경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)</p>
+      <p>대표이사 : 정해린 | 사업자등록번호 : 135-85-04288</p>
+      <p>통신판매업 신고번호 : 제2006-용인처인-0216호</p>
+      <p><a class="k-text5" href="https://www.everland.com/web/everland/customercenter/faq/faq.html"><strong>손님상담센터</strong></a> : 031-320-5000(유료)</p>
+      <p><a class="k-text5" href="https://www.everland.com/web/everland/personalinfo/index.html"><strong>개인정보처리방침</strong></a> |
+      <a class="k-text5" href="https://www.everland.com/web/everland/policyrevision/list.html"><strong>방침 개정 안내</strong></a> |
+      <a class="k-text5" href="https://www.everland.com/web/everland/bidnotice/list.html"><strong>입찰공고</strong></a></p>
+      <p class="k-text4">Copyright © Samsung C&T Corporation. <br/> All rights reserved.</p>
+      </p>
+</footer>
+
+  <!-- menubar start -->
+  <div class="z-menubar">
+      <a
+        href="https://www.everland.com/web/everland/how/charge/how_use_method.html"
+        class="line"
+      >
+        <span>요금 & 패키지</span>
+      </a>
+      <a
+        href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrList&siteCode=CT00101&themeCode=CT00401"
+        class="line"
+      >
+        <span>어트랙션</span>
+      </a>
+      <a href="S_carri.html" class="line">
+        <span>가이드 맵</span>
+      </a>
+      <a
+        href="https://reservation.everland.com/web/main.do?method=index"
+        class="line"
+      >
+        <span>스마트 예약</span>
+      </a>
+    </div>
+    <!-- menubar end .menubar -->
+
+
+
+    <!-- YE Top button -->
+    <button id="Y_top">
+      <a href="#">
+        <img src="./Y_img/top.png" width="10" alt="top"/>
+        <p>TOP</p>
+      </a>
+    </button>
+
+    
+</body>
+</html>
+
+</body>
+</html>

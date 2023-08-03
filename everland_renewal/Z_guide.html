@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>z-guide map</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/Z_guide.css" />
+    <!-- <link rel="stylesheet" href="css/H_everland.css"/> -->
+    <link rel="stylesheet" href="css/logo_everland.css"/>
+    <link rel="stylesheet" href="css/top.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery-1.8.1.min copy.js"></script>
+    <script src="js/scrollTo.min.js"></script>
+    <script src="js/H_everland.js"></script>
+    <script src="js/Z_guide.js"></script>
+    <script src="js/top.js"></script>
+  </head>
+  <body>
+    <!-- <header class="k-top cf">
+      <div id="k-logo1">
+          <div class="container">
+            <a href="index.html"><h1>EVERLAND</h1></a>
+          </div>
+      </div>
+
+      <nav class="k-tmenu">
+        <ul class="k-navi"> -->
+          <!-- <li><a class="k-hamburger" href="#"><img src="H_img/icon4.png" alt="icon"></a></li> -->
+          <? include "t_login1.php"; ?>
+            <!-- <li><a href="login_form.php"><img src="img/cb_icon2.png" alt="icon"></a></li> -->
+
+            <!-- <li><a href="#"><img src="H_img/cb_icon1.png" alt="icon"></a>
+                <ul class="k-sub1">
+                    <li><a href="#"><img src="H_img/kor.png" alt="icon"></a></li>
+                    <li><a href="#"><img src="H_img/eng.png" alt="icon"></a></li>
+                    <li><a href="#"><img src="H_img/chi.png" alt="icon"></a></li> -->
+                <!-- </ul>
+            </li>
+        </ul>
+    </nav>
+    </header> -->
+
+
+    <!-- YE Top button -->
+    <button id="Y_top">
+      <a href="#">
+        <img src="./Y_img/top.png" width="10" alt="top"/>
+        <p>TOP</p>
+      </a>
+    </button>
+
+
+
+    <!-- ZW_Bottom Fix Menubar -->
+    <div class="z-menubar">
+      <a href="https://www.everland.com/web/everland/how/charge/how_use_method.html" class="line">
+        <span>요금 & 패키지</span>
+      </a>
+      <a href="https://www.everland.com/service/front/frontFavorite.do?method=favorAtrList&siteCode=CT00101&themeCode=CT00401"
+        class="line">
+        <span>어트랙션</span>
+      </a>
+      <a href="Z_guide.html" class="line">
+        <span>가이드 맵</span>
+      </a>
+      <a href="https://reservation.everland.com/web/main.do?method=index" class="line">
+        <span>스마트 예약</span>
+      </a>
+    </div>
+
+
+     <!-- HS_Hamberger Menu -->
+    <nav class="menu">
+      <div class="menu1">
+        <div id="logo">
+            <div class="container">
+              <a href="index.html">
+                <h1>EVERLAND</h1>
+              </a>
+            </div>
+        </div>
+        <!-- <a href="#"><img class="logo1" src="./H_img/eve_logo.png" alt="에버랜드 로고 이미지"></a> -->
+
+        <div class="search">
+            <input type="text" name="search" class="search" placeholder=" 검색어를 입력해 주세요">
+            <a href="#"><img id="search" src="./H_img/search.png" alt="검색"/></a>
+        </div>
+
+        <nav class="icon">
+          <? include "t_login2.php"; ?>
+            <!-- <a href="#">
+                <img src="./H_img/icon3.png" alt="로그인 아이콘">
+                <span class="text1">로그인</span>
+            </a> -->
+            <a href="https://www.everland.com/web/everland/how/traffic/how_traffic_info04.html">
+                <img src="./H_img/icon2.png" alt="오시는길 아이콘"/>
+                <span class="text2">오시는길</span>
+            </a>
+            <a href="https://www.everland.com/web/everland/how/amenity/how_amenity.html">
+                <img src="./H_img/icon1.png" alt="편의시설 아이콘"/>
+                <span class="text3">편의시설</span>
+            </a>
+        </nav>
+      </div>
+    
+      <ul>
+        <li>
+            <a href="#">시설 안내 및 즐길거리<i class="xi-plus"></i></a>
+            <ul class="sub">
+                <li><a href="https://www.everland.com/web/everland/favorite/entertainment/index.html">엔터테인먼트</a></li>
+                <li><a href="https://www.everland.com/web/everland/favorite/zootopia/index.html">주토피아(동물원)</a></li>
+                <li><a href="https://www.everland.com/web/everland/favorite/garden/index.html">플랜토피아(정원)</a></li>
+                <li><a href="https://www.everland.com/web/everland/favorite/restaurant/index.html">레스토랑</a></li>
+                <li><a href="https://www.everland.com/web/everland/favorite/giftshop/index.html">선물샵</a> <span>&</span>
+                <a href="https://brand.naver.com/everland"><span>온라인 굿즈샵</span></a>
+                </li>
+                <li><a href="https://www.everland.com/web/everland/favorite/glamping/index.html">글램핑</a></li>
+            </ul>
+        </li>
+        <li><a href="#">체험프로그램<i class="xi-plus"></i></a>
+            <ul class="sub">
+                <li><a href="https://www.everland.com/web/everland/membership/mem_year/news_event/index.html">멤버쉽</a></li>
+                <li><a href="https://www.everland.com/web/everland/now/special/special_package.html">드림투어</a></li>
+                <li><a href="https://www.everland.com/web/everland/now/experience/now_experience_program.html">체험프로그램</a></li>
+            </ul>
+        </li>
+        <li> <a href="#">단체예약<i class="xi-plus"></i></a>
+            <ul class="sub">
+                <li><a href="https://www.everland.com/everworkshop/index.html">기업</a></li>
+                <li><a href="https://www.everland.com/everedu/index.html">학생</a></li>
+            </ul>
+        </li>
+        <li><a href="#">CAST<i class="xi-plus"></i></a>
+            <ul class="sub">
+                <li><a href="https://www.everland.com/web/everland/recruitment/cast/recruitment/news/recruitment_guide01.html">채용</a></li>
+                <li><a href="https://pvoc.everland.com/">참여</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.everland.com/web/everland/customercenter/faq/faq.html">고객센터</a></li>
+        <li><a href="https://www.everland.com/web/everland/now/news/news_list.html">뉴스 & 이벤트</a></li>
+      </ul>
+
+      <!-- <? include "t_login3.php"; ?> -->
+        
+      <button class="cross">&#735;</button>
+    </nav>
+
+
+    <div class="z-subWrap">
+      <div id="z-map" class="z-subMap">
+        <!-- <img src="./ever_guide/e-map.png" alt="지도" /> -->
+        <img src="./ever_guide/map3.png" alt="지도" />
+      </div>
+
+
+
+      <div class="z-container">
+        <div id="z-button" class="z-btn">
+          <ul class="tab">
+
+            <li class="z-atrbtn">
+              <a href="#button1, #button2, #button3, #button4, #button5, #button6, #button7" class=" z-selected z-act">
+                <p>전체보기</p>
+              </a>
+            </li>
+
+            <li class="z-atrbtn">
+              <a href="#button1" class=" z-selected z-act1">
+                <!-- <img src="../Z-./ever_guide//icon/ico_act1.png" alt="어트랙션" width="40" height="40"> -->
+                <p>어트랙션</p>
+              </a>
+            </li>
+
+            <li class="z-atrbtn">
+              <a href="#button2" class="z-act2">
+                <!-- <img src="./ever_guide/ico_act2.png" alt="어트랙션" width="40" height="40"> -->
+                <p>엔터테인먼트</p>
+              </a>
+            </li>
+
+            <li class="z-atrbtn">
+              <a href="#button3" class="z-act3">
+                <!-- <img src="./ever_guide/ico_act3.png" alt="어트랙션" width="40" height="40"> -->
+                <p>주토피아</p>
+              </a>
+            </li>
+
+            <li class="z-atrbtn">
+              <a href="#button4" class="z-act4">
+                <!-- <img src="./ever_guide/ico_act4.png" alt="어트랙션" width="40" height="40"> -->
+                <p>플랜토피아</p>
+              </a>
+            </li>
+
+            <li class="z-atrbtn">
+              <a href="#button5" class="z-act5">
+                <!-- <img src="./ever_guide/ico_act5.png" alt="어트랙션" width="40" height="40"> -->
+                <p>레스토랑</p>
+              </a>
+            </li>
+
+            <li class="z-atrbtn">
+              <a href="#button6" class="z-act6">
+                <!-- <img src="./ever_guide/ico_act6.png" alt="어트랙션" width="40" height="40"> -->
+                <p>선물샵</p>
+              </a>
+            </li>
+
+            <!-- <li class="z-atrbtn">
+              <a href="#button7" class="z-act7">
+                <img src="./ever_guide/ico_act7.png" alt="어트랙션" width="40" height="40">
+                <p>편의시설</p>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div id="z-panel">
+        <ul id="z-attrctn" class="z-attr cf">
+          
+          <li id="button1">
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr2.jpg" alt="챔피언쉽 로데오" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">챔피언쉽 로데오</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr3.jpg" alt="콜럼버스 대탐험" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">콜럼버스 대탐험</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr4.jpg" alt="썬더폴스" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">썬더폴스</span>
+            </span>
+            <span class="z-titbox">
+              <span class="z-atrNmR">운영중</span>
+              <span class="z-atrNmR">10:00 ~ 22:30</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr5.jpg" alt="플래쉬 팡팡" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">플래쉬 팡팡</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr6.jpg" alt="매직 쿠키하우스" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">매직 쿠키하우스</span>
+            </span>
+            <span class="z-titbox">
+              <span class="z-atrNmR">운영중</span>
+              <span class="z-atrNmR">10:00 ~ 22:00</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr7.jpg" alt="범퍼카" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">범퍼카</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr8.jpg" alt="슈팅고스트" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">슈팅 고스트</span>
+            </span>
+            <span class="z-titbox">
+              <span class="z-atrNmR">운영중</span>
+              <span class="z-atrNmR">10:00 ~ 21:00</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr9.jpg" alt="로얄 쥬빌리 캐로셀" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">로얄 쥬빌리 캐로셀</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr10.jpg" alt="사파리월드" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">사파리월드</span>
+            </span>
+            <span class="z-titbox">
+              <span class="z-atrNmR">운영중</span>
+              <span class="z-atrNmR">10:30 ~ 18:00</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr11.jpg" alt="아마존 익스프레스" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">아마존 익스프레스</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:25 ~ 20:30</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr12.jpg" alt="T익스프레스" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">T익스프레스</span>
+            </span>
+            <span class="z-titbox">
+              <span class="z-atrNmR">운영중</span>
+              <span class="z-atrNmR">10:20 ~ 20:30</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr13.jpg" alt="롤링X트레인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">롤링 X 트레인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr14.jpg" alt="렛츠 트위스트" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">렛츠 트위스트</span>
+            </span>
+            <span class="z-titbox">
+              <span class="z-atrNmR">운영중</span>
+              <span class="z-atrNmR">10:00 ~ 22:00</span>
+            </span>
+            </a>
+          </li>
+
+          <li id="button2">
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/etr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">차원의 문</span>
+            </span>
+            <span class="z-titbox cf">
+              <!-- <span class="z-atrNmR cf">운영중</span> -->
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/etr2.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">라라의 몬스터 클린 업</span>
+            </span>
+            <span class="z-titbox cf">
+              <!-- <span class="z-atrNmR cf">운영중</span> -->
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/etr3.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">레니의 대모험~</span>
+            </span>
+            <span class="z-titbox cf">
+              <!-- <span class="z-atrNmR cf">운영중</span> -->
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/etr4.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">문라이트 퍼레이드</span>
+            </span>
+            <span class="z-titbox cf">
+              <!-- <span class="z-atrNmR cf">운영중</span> -->
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/etr5.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">미디어 아트 갤러리</span>
+            </span>
+            <span class="z-titbox cf">
+              <!-- <span class="z-atrNmR cf">운영중</span> -->
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/etr6.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">스프링 업 가든 콘서트</span>
+            </span>
+            <span class="z-titbox cf">
+              <!-- <span class="z-atrNmR cf">운영중</span> -->
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/etr7.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">왈츠 인 로열팰리스</span>
+            </span>
+            <span class="z-titbox cf">
+              <!-- <span class="z-atrNmR cf">운영중</span> -->
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/etr8.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">카니발 판타지퍼레이드</span>
+            </span>
+            <span class="z-titbox cf">
+              <!-- <span class="z-atrNmR cf">운영중</span> -->
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/etr9.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">타임 오디세이</span>
+            </span>
+            <span class="z-titbox cf">
+              <!-- <span class="z-atrNmR cf">운영중</span> -->
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/etr10.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">페어리 포토타임</span>
+            </span>
+            <span class="z-titbox cf">
+              <!-- <span class="z-atrNmR cf">운영중</span> -->
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <!-- <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a> -->
+          </li>
+
+          <li id="button3">
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/zoo1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">버드 파라다이스</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/zoo2.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">뿌빠타운</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/zoo3.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">알버트 스테이스 센터</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/zoo4.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">앵무새집</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/zoo5.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">판다월드</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/zoo6.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">판타스틱 윙스</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/zoo7.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">펭귄 아일랜드</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <!-- <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a> -->
+          </li>
+
+          <li id="button4">
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/plt1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">뮤직가든</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/plt2.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">이솝 우산길</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/plt3.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">이솝학습장</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/plt4.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">로맨틱 타워트리</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/plt5.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">장미원</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/plt6.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">장미원학습장</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/plt7.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">포시즌스 가든</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <!-- <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">포시즌스 가든</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a> -->
+            <!-- <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a> -->
+          </li>
+
+          <li id="button5">
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">글로벌 페어</span>
+              <span class="z-atrNmL">스타벅스</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res2.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">글로벌 페어</span>
+              <span class="z-atrNmL">온더보더</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res3.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">멀린스 스낵</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res4.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">타운즈 마켓 레스토랑</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res5.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">KFC</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res6.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">뉴욕 센트럴 스낵</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res7.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">매직타임 레스토랑</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res8.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">버거카페 유럽</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res9.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">알프스 쿠체</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res10.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">쿠치나 마리오</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res11.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">글로벌 페어</span>
+              <span class="z-atrNmL">팝콘 카트</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res12.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">달콤커피 판다월드점</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res13.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">아마존 스낵</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/res14.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">타무스낵</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+          </li>
+
+          <li id="button6">
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">글로벌 페어</span>
+              <span class="z-atrNmL">그랜드엠포리엄</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift2.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">글로벌 페어</span>
+              <span class="z-atrNmL">라시언메모리엄</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift3.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">글로벌 페어</span>
+              <span class="z-atrNmL">캔디&쿠키</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift4.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">글로벌 페어</span>
+              <span class="z-atrNmL">에델바이스</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift5.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">글로벌 페어</span>
+              <span class="z-atrNmL">마하라자샵(인생네컷)</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift6.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">로즈기프트</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift7.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">매직랜드</span>
+              <span class="z-atrNmL">이솝기프트</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift8.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">스카이웨이 기프트</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift9.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">유러피언 어드벤처</span>
+              <span class="z-atrNmL">알프스샵</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift10.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">로스트밸리기프트</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift11.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">사파리기프트</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift12.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">아마존샵</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift13.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">주토피아</span>
+              <span class="z-atrNmL">판다월드샵</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/gift14.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">글로벌 페어</span>
+              <span class="z-atrNmL">튤립하우스 (올리브영)</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+          </li>
+
+          <!-- <li id="button7">
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+            <a href="#">
+              <img class="z-atrimg" src="./ever_guide/atr1.jpg" alt="허리케인" />
+            <span class="z-titbox">
+              <span class="z-atrNmL">아메리칸 어드벤처</span>
+              <span class="z-atrNmL">허리케인</span>
+            </span>
+            <span class="z-titbox cf">
+              <span class="z-atrNmR cf">운영중</span>
+              <span class="z-atrNmR cf">10:00 ~ 22:00</span>
+            </span>
+            </a>
+          </li> -->
+
+        </ul>
+      </div>
+
+    </div>
+    <footer class="k-footer">
+      <a href="everland2.html"><img src="./ever_guide/ever_logo.PNG" alt="logo"></a>
+      <div class="k-sns">
+          <a href="https://www.youtube.com/user/withEverland"><img src="./ever_guide/youtube.png" alt="유튜브"></a>
+          <a href="https://www.instagram.com/witheverland/"><img src="./ever_guide/instagram.png" alt="인스타"></a>
+          <a href="https://www.facebook.com/witheverland"><img src="./ever_guide/facebook.png" alt="페이스북"></a>
+          <a href="https://blog.naver.com/witheverland"><img src="./ever_guide/bold.png" alt="네이버 블로그"></a>
+          <a href="https://www.witheverland.com/"><img src="./ever_guide/with.png" alt="위드 블로그"></a>
+          <a href="https://twitter.com/witheverland"><img src="./ever_guide/twitter.png" alt="트위터"></a>
+      </div>
+  
+          <p>
+              <a class="k-text5" href="https://www.everland.com/web/everland/resort/intro/resort_intro.html">에버랜드 리조트 소개</a> | 
+              <a class="k-text5" href="https://www.everland.com/web/everland/provision/h_provision/provision_new.html">이용약관</a> | 
+              <a class="k-text5" href="https://pvoc.everland.com/">CAST 참여</a> | 
+              <a class="k-text5" href="https://www.everland.com/web/everland/sitemap/sitemap.html">사이트맵</a>
+          </p>
+  
+          <p>경기도 용인시 처인구 포곡읍 에버랜드로 199 삼성물산(주)</p>
+          <p>대표이사 : 정해린 | 사업자등록번호 : 135-85-04288</p>
+          <p>통신판매업 신고번호 : 제2006-용인처인-0216호</p>
+          <p><a class="k-text5" href="https://www.everland.com/web/everland/customercenter/faq/faq.html"><strong>손님상담센터</strong></a> : 031-320-5000(유료)</p>
+          <p><a class="k-text5" href="https://www.everland.com/web/everland/personalinfo/index.html"><strong>개인정보처리방침</strong></a> |
+          <a class="k-text5" href="https://www.everland.com/web/everland/policyrevision/list.html"><strong>방침 개정 안내</strong></a> |
+          <a class="k-text5" href="https://www.everland.com/web/everland/bidnotice/list.html"><strong>입찰공고</strong></a></p>
+          <p class="k-text4">Copyright © Samsung C&T Corporation. All rights reserved.</p>
+          </p>
+  </footer>
+  </body>
+</html>

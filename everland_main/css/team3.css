@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+  font-family: 'Cafe24SsurroundAir';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+    
+body {
+  width: 100%;
+  margin: 0 auto;
+  /* height: 100vh; */
+  font-family: "Nanum Gothic", "Cafe24SsurroundAir";
+  /* background: linear-gradient(
+    65deg,
+    #ff8ce6,
+    #FDD17D,
+    #7AD9E1,
+    #f394ff,
+    #2dbdca
+  ); */
+  /* display: flex; */
+}
+
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+#mainbox {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#name {
+  width: 50%;
+  margin: 20rem auto;
+}
+#team3 {
+  position: relative;
+  width: 70%;
+}
+
+.container img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+#box {
+  margin: 1rem auto;
+  width: 100%;
+}
+.title {
+  margin: 2rem 0 1rem 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.txt {
+  line-height: 1.6;
+}
+
+
+
+/* iframe */
+#phone {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+
+#in {
+  /* -webkit-overflow-scrolling: touch; */
+  position: absolute;
+  padding: 10px;
+  border: 3px solid #2f2f2f;
+  background: #171717;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 40px; 
+}
+#in::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+#in::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 18%;
+  height: 9px;
+  top: 20px;
+  left: 50%;
+  border-radius: 10px;
+  background: #2f2f2f;
+  transform: translateX(-50%);
+}
+
+#in iframe {
+  width: 390px;
+  height: 844px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  border-radius: 40px;
+}

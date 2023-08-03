@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POPUP_EVERLAND</title>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Titan+One");
+    @font-face {
+      font-family: 'Cafe24SsurroundAir';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    *, *::after, *::before {
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    #pop {
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      font-size: 1rem;
+      margin: 0 auto;
+      top: 30%;
+      position: absolute;
+    }
+
+    .pop {
+      width: 80%;
+      margin: 0 auto;
+      text-align: justify;
+    }
+    .pop p {
+      font-family: "Cafe24SsurroundAir";
+      line-height: 2rem;
+      text-align: center;
+    }
+
+    /* logo */
+    #logo {
+      margin-top: 50px;
+      font-family: "titan One";
+      color: #fff;
+      font-size: 1.3rem;
+    } 
+    .container{
+      background:#fff;
+      width: 100%;
+      height: auto;
+      margin:0;
+      padding:0;
+      display:flex;
+      flex-flow:row wrap;
+    }
+    .container a{
+      width: 100%;
+    } 
+    .container h1 {
+      width: 100%;
+      margin: 0 auto;
+      font-family:'Titan One', 'cursive';
+      font-size: 2.2rem;
+      font-weight: bold;
+      align-content:center;
+      justify-content:center;
+      text-align: center;
+      height: auto;
+      position:relative;
+    }
+    .container h1:before {
+      background: linear-gradient(
+        65deg,  
+        #ff8ce6,
+        #FDD17D, 
+        #7AD9E1,
+        #f394ff,
+        #2dbdca
+      );
+      width: 80%;
+      margin: 0 auto;
+      margin-left: 20%;
+      height: 2.5rem;
+      display:block;
+      position:absolute;
+      content:"";
+      mix-blend-mode:screen;
+    }
+
+    /* button */
+    #close {
+      bottom: 10px;
+      position: absolute;
+      display: flex;
+      width: 100%;
+      vertical-align: top;
+    }
+    #close button {
+      border: none;
+      background: none;
+      font-family: "Cafe24SsurroundAir";
+      font-weight: bold;
+    }
+    #close .oneday input {
+      vertical-align: middle;
+    }
+
+    #close .cl {
+      position: absolute;
+      right: 0;
+      /* display: flex; */
+    }
+    #close .cl img {
+      vertical-align: middle;
+    }
+  </style>
+
+  
+</head>
+<body>
+  <div id="pop">
+    <div class="pop">
+      <p>
+        위 모바일 페이지는 
+        <br/>
+        그린컴퓨터아카데미(신촌점)에서 교육을 
+        <br/>
+        받고 있는 김예은, 강지우, 경효선, 정소연의 팀프로젝트임을 알려드리며, 상업적 목적으로 사용되는 것이 아님을 밝힙니다.
+      </p>
+    </div>
+    
+    <div id="logo">
+      <div class="container">
+        <a href="#">
+          <h1>EVERLAND</h1>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="close">
+    <button class="oneday">
+      <a href="#">
+        <input type="checkbox">
+      하루동안 보지 않기
+      </a>
+    </button>
+
+    <button class="cl">
+      <a href="index.html">
+        <img src="./Y_img/close.png" alt="close" width="20" height="20">
+        창 닫기
+      </a>
+    </button>
+  </div>
+</body>
+</html>

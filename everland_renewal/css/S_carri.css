@@ -1,0 +1,952 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Titan+One");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+@font-face {
+  font-family: "Cafe24SsurroundAir";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+a {text-decoration: none; color: #272830;}
+
+
+#button11 a {
+  display: none;
+}
+
+.more_btn {
+  margin: 60px 0 45px 0;
+  display: block;
+}
+
+.more_btn button {
+  text-align: center;
+  margin: 0 auto;
+  width: 150px;
+  background-color: #fff;
+  color: #03a9f4;
+  font-family: "Cafe24SsurroundAir";
+  cursor: pointer;
+  padding: 10px 0;
+  display: block;
+  border: 2px double #03a9f4;
+}
+
+/* 메인 로고 부분 */
+
+.S-content {
+  margin-left: 125px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.S-content a h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+}
+
+.S-content a h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #03a9f4;
+}
+
+.S-content a h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 5s ease-in-out infinite;
+}
+
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  60% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+}
+/* 메인 로고 종료 */
+
+
+
+/* 탑 아이콘 시작 */
+
+.S-xi {
+  top: 3px;
+  padding: 13px 20px 0 0;
+  font-size: 28px;
+  position: absolute;
+  right: 0;
+}
+
+.S-xi a {
+  padding: 2px;
+}
+
+/* 탑 아이콘 종료 */
+
+
+
+/* 필터 조건 시작 */
+
+.S-container {
+  margin: 0% 3% 0px;
+  white-space: nowrap;
+  overflow-x: scroll;
+  visibility: hidden;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.S-container-inner,
+.S-container:hover {
+  visibility: visible;
+}
+
+.S-container::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.S-container::-webkit-scrollbar-thumb {
+  background-color: #0096DA;
+  border-radius: 25px;
+}
+
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+#S-button {
+  /* display: flex; */
+  justify-content: space-between;
+  white-space: nowrap;
+  /* margin-bottom: 30px; */
+}
+
+#S-button ul {
+  display: flex;
+}
+
+.S-atrbtn {
+  display: block;
+  white-space: normal;
+  flex: 1 0 65px;
+  text-align: center;
+}
+
+.S-atrbtn a {
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.S-atrbtn a::before {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 55px;
+  border: 1px solid #272830;
+  border-radius: 100%;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  background-size: 40px 40px;
+}
+
+
+.S-atrbtn a p {
+  font-size: 0.7rem;
+  color: #272830;
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  font-family: "Cafe24SsurroundAir";
+  font-weight: bold;
+}
+
+.S-atrbtn .S-act0:hover::before,
+.S-atrbtn .S-act0.active::before 
+{
+  border: 2px solid #0096DA;
+  background-color: #0096DA;
+  background-image: url(../carri_img/cb_icon/ALL.png);
+}
+
+.S-atrbtn .S-act1:hover::before,
+.S-atrbtn .S-act1.active::before 
+{
+  border: 2px solid #0096DA;
+  background-image: url(../carri_img/cb_icon/carri_icon01.png);
+}
+
+.S-atrbtn .S-act2:hover::before,
+.S-atrbtn .S-act2.active::before 
+{
+  border: 2px solid #0096DA;
+  background-image: url(../carri_img/cb_icon/carri_icon02.png);
+}
+
+.S-atrbtn .S-act3:hover::before,
+.S-atrbtn .S-act3.active::before 
+{
+  border: 2px solid #0096DA;
+  background-image: url(../carri_img/cb_icon/carri_icon03.png);
+}
+
+.S-atrbtn .S-act4:hover::before,
+.S-atrbtn .S-act4.active::before 
+{
+  border: 2px solid #0096DA;
+  background-image: url(../carri_img/cb_icon/carri_icon04.png);
+}
+
+.S-atrbtn .S-act5:hover::before,
+.S-atrbtn .S-act5.active::before 
+{
+  border: 2px solid #0096DA;
+  background-image: url(../carri_img/cb_icon/carri_icon05.png);
+}
+
+.S-atrbtn .S-act6:hover::before,
+.S-atrbtn .S-act6.active::before 
+{
+  border: 2px solid #0096DA;
+  background-image: url(../carri_img/cb_icon/carri_icon06.png);
+}
+
+.S-atrbtn a:hover p,
+.S-atrbtn a.active p {
+  color: #0096DA;
+  font-weight: bold;
+}
+
+
+
+.S-atrbtn .S-act0::before {
+  background-image: url(../carri_img/cb_icon/ALL1.png);
+  
+}
+
+.S-atrbtn .S-act1::before {
+  background-image: url(../carri_img/cb_icon/carri_icon01_b.png);
+}
+
+.S-atrbtn .S-act2::before {
+  background-image: url(../carri_img/cb_icon/carri_icon02_b.png);
+}
+.S-atrbtn .S-act3::before {
+  background-image: url(../carri_img/cb_icon/carri_icon03_b.png);
+}
+.S-atrbtn .S-act4::before {
+  background-image: url(../carri_img/cb_icon/carri_icon04_b.png);
+}
+.S-atrbtn .S-act5::before {
+  background-image: url(../carri_img/cb_icon/carri_icon05_b.png);
+}
+.S-atrbtn .S-act6::before {
+  background-image: url(../carri_img/cb_icon/carri_icon06_b.png);
+}
+
+/* 필터 조건 종료 */
+
+
+
+
+
+/* 필터 내용 시작 */
+
+#S-attrctn {
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+  padding: 0 0 0% 2%;
+}
+
+#S-attrctn a {
+  display: block;
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+  margin-bottom: 3%;
+  text-decoration: none;
+  color: #272830;
+  border: 1px solid #0096DA;
+  border-radius: 8px;
+  font-family: "Cafe24SsurroundAir";
+}
+
+.S-atrimg {
+  width: 100%;
+  border: none;
+  vertical-align: top;
+  border-radius: 7px 7px 0 0;
+}
+
+.S-titbox {
+  display: block;
+  padding: 15px 6%;
+}
+
+.S-titbox:last-child {
+  padding: 0px 6% 3% 15px;
+  text-align: right;
+  display: block;
+}
+
+.S-titbox .S-atrNmL:first-child {
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: block;
+}
+
+.S-titbox .S-atrNmL:last-child {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  display: block;
+}
+
+.end {
+  color: red;
+}
+
+.S-titbox .S-atrNmR:first-child {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.S-titbox .S-atrNmR:last-child {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: block;
+}
+
+#button15 .S-titbox .S-atrNmR:first-child {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+}
+
+#button15 .S-titbox .S-atrNmR:last-child {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  display: block;
+}
+
+/* 필터 내용 종료 */
+
+
+
+
+/* footer 시작 */
+
+.S-content1 {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.S-content1 a h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.8em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+}
+
+.S-content1 a h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #03a9f4;
+}
+
+.S-content1 a h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 5s ease-in-out infinite;
+}
+
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  60% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+}
+
+
+
+
+.S-footer {
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1;
+  margin-top: 100px;
+  padding: 60px 10px 0 10px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.S-footer img {
+  width: 55%;
+}
+.S-sns {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 40px 0 40px 0;
+}
+.S-sns a {
+  padding: 0 4.7% 0 4.7%;
+}
+.S-sns img {
+  width: 6%;
+}
+.S-footer p {
+  font-size: 13px;
+  color: #818181;
+  padding-bottom: 10px;
+}
+.S-footer .S-text5 {
+  color: #3d3d3d;
+}
+.S-text4 {
+  font-size: 11px;
+  padding-top: 5px;
+}
+
+/* footer 종료 */
+
+
+
+
+
+
+@media screen and (min-width:280px) and (max-width:389px) {
+
+  /* header logo 사이즈 조절 시작*/
+.S-content {
+  margin-left: 95px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+  .S-content a h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+  }
+  /* header logo 사이즈 조절 종료*/
+
+
+
+/* 필터 조건 시작 */
+
+.S-container {
+  /* width: auto;
+    padding: 0 3%; */
+  padding-top: 200px;
+  margin: 0 3% 50px;
+  white-space: nowrap;
+  overflow: auto;
+  /* padding-bottom: 20px; */
+}
+
+#S-button {
+  /* display: flex; */
+  justify-content: space-between;
+  white-space: nowrap;
+  /* margin-bottom: 30px; */
+}
+
+#S-button ul {
+  display: flex;
+}
+
+.S-atrbtn {
+  display: block;
+  white-space: normal;
+  flex: 1 0 65px;
+  text-align: center;
+}
+
+.S-atrbtn a {
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.S-atrbtn a::before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #272830;
+  border-radius: 100%;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  background-size: 35px 35px;
+}
+
+
+.S-atrbtn a p {
+  font-size: 0.6rem;
+  color: #272830;
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  font-family: "Cafe24SsurroundAir";
+  font-weight: bold;
+}
+
+
+/* 필터 조건 종료 */
+
+
+
+
+/* 필터 내용 시작 */
+
+#S-attrctn {
+  margin-top: 50px;
+  width: auto;
+  height: auto;
+  padding: 0 0 0% 2%;
+}
+
+#S-attrctn a {
+  display: block;
+  float: left;
+  width: 48%;
+  margin-right: 2%;
+  margin-bottom: 3%;
+  text-decoration: none;
+  color: #272830;
+  border: 1px solid #0096DA;
+  border-radius: 8px;
+  font-family: "Cafe24SsurroundAir";
+}
+
+.S-atrimg {
+  width: 100%;
+  border: none;
+  vertical-align: top;
+  border-radius: 7px 7px 0 0;
+}
+
+.S-titbox {
+  display: block;
+  padding: 10px 6%;
+}
+
+.S-titbox:last-child {
+  padding: 0px 6% 3% 15px;
+  text-align: right;
+  display: block;
+}
+
+.S-titbox .S-atrNmL:first-child {
+  font-weight: 300;
+  font-size: 0.725rem;
+  line-height: 1.25rem;
+}
+
+.S-titbox .S-atrNmL:last-child {
+  font-weight: bold;
+  font-size: 0.82rem;
+  line-height: 1.25rem;
+  display: block;
+}
+
+.S-titbox .S-atrNmR:first-child {
+  font-weight: 400;
+  font-size: 0.72rem;
+  line-height: 1.25rem;
+}
+
+.S-titbox .S-atrNmR:last-child {
+  font-size: 0.72rem;
+  line-height: 1.25rem;
+  display: block;
+}
+
+#button15 .S-titbox .S-atrNmR:first-child {
+  font-weight: 400;
+  font-size: 0.72rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+}
+
+#button15 .S-titbox .S-atrNmR:last-child {
+  font-size: 0.72rem;
+  line-height: 1.25rem;
+  display: block;
+}
+
+/* 필터 내용 종료 */
+
+
+
+  /* footer logo 사이즈 조절 시작*/
+  .S-content1 a h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* footer logo 사이즈 조절 종료*/
+
+  .S-footer {
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    margin-top: 100px;
+    padding: 60px 10px 0 10px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .S-footer img {
+    width: 55%;
+  }
+  .S-sns {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px 0 40px 0;
+  }
+  .S-sns a {
+    padding: 0 4.7% 0 4.7%;
+  }
+  .S-sns img {
+    width: 5.4%;
+  }
+  .S-footer p {
+    font-size: 8px;
+    color: #818181;
+    padding-bottom: 10px;
+  }
+  .S-footer .S-text5 {
+    color: #3d3d3d;
+  }
+  .S-text4 {
+    font-size: 11px;
+    padding-top: 5px;
+  }
+
+  
+}
+
+
+
+
+@media screen and (min-width:550px) and (max-width:640px) {
+
+  /* header logo 사이즈 조절 시작*/
+.S-content {
+  margin-left: 150px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+  .S-content a h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2.2em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+  } 
+
+  /* header logo 사이즈 조절 종료 */
+
+
+
+/* 필터 내용 시작 */
+
+#S-attrctn a {
+  display: block;
+  float: left;
+  width: 31.3%;
+  margin-right: 2%;
+  margin-bottom: 3%;
+  text-decoration: none;
+  color: #272830;
+  border: 1px solid #0096DA;
+  border-radius: 8px;
+  font-family: "Cafe24SsurroundAir";
+}
+
+
+
+  /* footer logo 사이즈 조절 시작*/
+  .S-content1 a h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* footer logo 사이즈 조절 종료*/
+  
+}
+
+
+
+
+/* ZW_Bottom fix menubar */
+.z-menubar {
+  background-color: #fff;
+  width: 100%;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 0;
+  border: 2px solid #0096DA;
+  border-radius: 35px 35px 0px 0px;
+  font-family: 'Cafe24Ssurround';
+
+  /* YE */
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  /**/
+}
+
+.z-menubar .line {
+  width: calc(25% - 1px);
+  border-left: 2px solid #0096DA;
+}
+
+.z-menubar .line>span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.z-menubar .line:first-child {
+  border-left: 0;
+}
+
+.z-menubar a {
+  padding: 10px 0 10px;
+  display: inline-block;
+}
+
+.z-menubar a:nth-child(1) {
+  color: #3c8e3d;
+}
+
+.z-menubar a:nth-child(2) {
+  color: #118df8;
+}
+
+.z-menubar a:nth-child(3) {
+  color: #ff5a03;
+}
+
+.z-menubar a:nth-child(4) {
+  color: #764aa2;
+}
+
+@media (min-width: 279px){ 
+  .z-text-left .z-text-one {
+    font-size: 0.7rem;
+    margin: 0 0 6px;
+  }
+
+  .z-text-left .z-text-two {
+    font-size: 0.7rem;
+  }
+
+  .z-text-right .z-text-thr {
+    font-size: 0.7rem;
+  }
+
+  .z-text-right .z-text-four {
+    font-size: 0.7rem;
+    margin-bottom: 6px;
+  }
+
+  .z-text-right .z-text-five {
+    font-size: 0.7rem;
+    margin: 0 0 6px;
+  }
+  
+  span {
+    font-size: 0.5rem;
+  }  
+}
+
+/* YE */
+@media screen and (min-width: 390px) {
+  .z-menubar {
+    height: 50px;
+    vertical-align: middle;
+    padding-top: 8px;
+  }
+  .z-menubar .line>span {
+    font-size: 0.8rem;
+  }
+}
+/*  */
+
+@media (min-width: 450px){
+  .z-text-left .z-text-one {
+    font-size: 1rem;
+    margin: 0 0 10px;
+  }
+
+  .z-text-left .z-text-two {
+    font-size: 1rem;
+    margin: 0 0 10px;
+  }
+
+  .z-text-right .z-text-thr {
+    font-size: 1rem;
+    margin: 0 0 8px;
+  }
+
+  .z-text-right .z-text-four {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .z-text-right .z-text-five {
+    font-size: 1rem;
+    margin: 0 0 8px;
+  }
+  
+  span {
+    font-size: 1rem;
+  }  
+}
+
+@media (min-width: 600px){
+  .z-title-large .z-title-one{
+    font-size: 2rem;
+    margin-bottom: 5%;
+  }
+
+  .z-title-large .z-title-two{
+    font-size: 1.5rem;
+  }
+
+  .z-text-left .z-text-one {
+    font-size: 1.3rem;
+    margin: 0 0 20px;
+  }
+
+  .z-text-left .z-text-two {
+    font-size: 1.3rem;
+  }
+
+  .z-text-right .z-text-thr {
+    font-size: 1.3rem;
+    margin: 0 0 12px;
+  }
+
+  .z-text-right .z-text-four {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+
+  .z-text-right .z-text-five {
+    font-size: 1.3rem;
+    margin-top: 12px;
+  }
+  
+  span {
+    font-size: 1.1rem;
+  }  
+}
+
